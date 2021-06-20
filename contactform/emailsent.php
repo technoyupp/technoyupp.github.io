@@ -13,5 +13,5 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("#");
+echo "ThankYou for Your Message!";
 ?>
