@@ -41,12 +41,19 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/hover/hover.min.css" rel="stylesheet">
+  
+   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Responsive css -->
   <link href="css/responsive.css" rel="stylesheet">
+
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/TechnoYuppLogo.png">
@@ -65,7 +72,7 @@
     "https://www.twitter.com/technoyupp",
     "https://www.instagram.com/technoyupp",
     "https://www.youtube.com/MrityunjaySingh",
-    "https://www.linkedin.com/in/technoyupp",
+    "https://www.linkedin.com/in/mrityunjay-singh-961341122",
     "https://in.pinterest.com/technoyupp",
     "https://www.imdb.com/name/nm11860267"
   ],
@@ -77,7 +84,76 @@
 }
 </script>
   
-  
+<style>
+.arrowpopup {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+.arrowpopup .tooltiptext {
+visibility: hidden;
+width: 160px;
+background-color: #856;
+color: white;
+text-align: center;
+border-radius: 4px;
+padding: 9px ;
+position: absolute;
+bottom: 150%;
+left: 50%;
+margin-left: -85px;
+}
+.arrowpopup .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #856 transparent transparent transparent;
+}
+.arrowpopup .show {
+visibility: visible;
+}
+
+.arrowpopup1 {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+.arrowpopup1 .tooltiptext1 {
+visibility: hidden;
+width: 160px;
+background-color: #856;
+color: white;
+text-align: center;
+border-radius: 4px;
+padding: 9px ;
+position: absolute;
+bottom: 150%;
+left: 50%;
+margin-left: -85px;
+}
+.arrowpopup1 .tooltiptext1::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #856 transparent transparent transparent;
+}
+.arrowpopup1 .show {
+visibility: visible;
+}
+hr {
+  height:5px;
+  border-width:1;
+  background-color:lightgreen;
+}
+</style>
   
 </head>
 
@@ -96,6 +172,7 @@
 
         <ul class="nav-menu list-unstyled">
           <li><a href="#header" class="smoothScroll">Home</a></li>
+		  <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
           <li><a href="#about" class="smoothScroll">About</a></li>
           <li><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
@@ -145,7 +222,7 @@
           <div class="about-descr">
 
             <p class="p-heading">Who is TechnoYupp? </p>
-            <p class="separator">Filmmaker from Lucknow, Uttar Pradesh. Film Director who can Shoot and Edit Films. Passionate about Photography and Tech things. A YouTuber with 3 Million+ Views and 30k+ subscribers. Oh Yes! Actor at <a href="https://www.imdb.com/name/nm11860267/">Why Cheat India, Crushed</a>; TechnoYupp </p>
+            <p class="separator">Filmmaker from Lucknow, Uttar Pradesh. Film Director who can Shoot and Edit Films. Love Photography and Tech things. A YouTuber(where "haste-hasate kuch sikha deta hu") with 3 Million+ Views and 30k+ subscribers. Oh Yes! Actor at <a href="https://www.imdb.com/name/nm11860267/">Why Cheat India, Crushed</a>; TechnoYupp </p>
           </div>
 
         </div>
@@ -153,8 +230,74 @@
     </div>
   </div>
   <!-- end section about us -->
+  
+  
+  
+<body style="text-align:center;">
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    
+      <div class="arrowpopup" onclick="myFunction()"><h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
+<span class="tooltiptext" id="tooltipdemo">(Assignment portfolio)</span>
+</div>
+<script>
+function myFunction() {
+var tt = document.getElementById("tooltipdemo");
+tt.classList.toggle("show");
+}
+</script>
+    <br> <br> <br>
+   
+	
+	        <button class="btn btn-outline-primary" type="button">Magazine</button>
+
+                            <iframe allowfullscreen="" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 600px;" src="https://heyzine.com/flip-book/967169fa72.html"></iframe>
+                        
+						
+
+     </div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+		  <button class="btn btn-outline-primary" type="button">Podcast</button>
+
+	<center>
+	<audio controls>
+
+  <source src="assets/audio/podcast.ogg," type="audio/ogg">
+  <source src="assets/audio/podcast.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+	</center>
+		<br>
+	<br>
+	<br>
+	<br>
+	
+	
+
+			  <button class="btn btn-outline-primary" type="button">Video</button>
+			  
+			 <br> 
+<video width="400" height="auto" poster="assets/video/thumbnail sq.jpg" controls>
+  <source src="assets/video/Do Kadam sample1.mp4" type="video/mp4">
+  <source src="assets/video/Do Kadam sample1.ogg" type="video/ogg">
+  Your browser does not support the video tag. 
+</video><br><div class="arrowpopup1" onclick="myFunction()">NOTE Click here!
+<span class="tooltiptext1" id="tooltipdemo1">This video is embedded for showcasing/review purpose only. Not released publicly. Not the final output. Please do not download and share.</span>
+</div>
+<script>
+function myFunction() {
+var tt = document.getElementById("tooltipdemo1");
+tt.classList.toggle("show");
+}
+</script>
+</section>
 
 
+<hr>
   
   <!-- start sectoion contact -->
   <div id="contact" class="paddsection">
